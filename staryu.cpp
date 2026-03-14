@@ -48,7 +48,7 @@ Point getCoordinates(double num, double angle, double center, double radius, dou
 int main () {
 
     // Pulling in interests and their stats
-    ifstream statsFile("academia.text"); // input file stream
+    ifstream statsFile("academia.txt"); // input file stream
     vector<stat> stats;
     string fileStat;
 
