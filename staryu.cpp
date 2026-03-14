@@ -138,8 +138,8 @@ int main () {
 
         // Tooltip (shown while hovering)
         svg << "<g class=\"tooltip\">\n"
-            << " <rect x=\"" << p.x - 15 << "\" y=\"" << p.y - 30 << "\" width=\"30\" height=\"20\" rx=\"4\" fill=\"#24292f\" />\n"
-            << " <text x=\"" << p.x << "\" y=\"" << p.y - 16 << "\" text-anchor=\"middle\" font-size=\"10\" fill=\"white\">" << stats[i].credits << "credits" << "</text>\n"
+            << " <rect x=\"" << p.x - 15 << "\" y=\"" << p.y - 30 << "\" width=\"50\" height=\"20\" rx=\"4\" fill=\"#24292f\" />\n"
+            << " <text x=\"" << p.x + 10 << "\" y=\"" << p.y - 16 << "\" text-anchor=\"middle\" font-size=\"10\" fill=\"white\">" << stats[i].credits << "credits" << "</text>\n"
             << "</g>\n";
     }
 

@@ -26,33 +26,33 @@
 <polygon points="200,62.5455 219.84,188.545 274.951,243.273 200,235.636 151.503,228 173.547,184.727 " fill="rgba(101, 112, 239, 0.93)" stroke="#6e78ccc2" stroke-width="2" />
 <circle class="point" cx="200" cy="62.5455" r="5" />
 <g class="tooltip">
- <rect x="185" y="32.5455" width="30" height="20" rx="4" fill="#24292f" />
- <text x="200" y="46.5455" text-anchor="middle" font-size="10" fill="white">54credits</text>
+ <rect x="185" y="32.5455" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="210" y="46.5455" text-anchor="middle" font-size="10" fill="white">54credits</text>
 </g>
 <circle class="point" cx="219.84" cy="188.545" r="5" />
 <g class="tooltip">
- <rect x="204.84" y="158.545" width="30" height="20" rx="4" fill="#24292f" />
- <text x="219.84" y="172.545" text-anchor="middle" font-size="10" fill="white">9credits</text>
+ <rect x="204.84" y="158.545" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="229.84" y="172.545" text-anchor="middle" font-size="10" fill="white">9credits</text>
 </g>
 <circle class="point" cx="274.951" cy="243.273" r="5" />
 <g class="tooltip">
- <rect x="259.951" y="213.273" width="30" height="20" rx="4" fill="#24292f" />
- <text x="274.951" y="227.273" text-anchor="middle" font-size="10" fill="white">34credits</text>
+ <rect x="259.951" y="213.273" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="284.951" y="227.273" text-anchor="middle" font-size="10" fill="white">34credits</text>
 </g>
 <circle class="point" cx="200" cy="235.636" r="5" />
 <g class="tooltip">
- <rect x="185" y="205.636" width="30" height="20" rx="4" fill="#24292f" />
- <text x="200" y="219.636" text-anchor="middle" font-size="10" fill="white">14credits</text>
+ <rect x="185" y="205.636" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="210" y="219.636" text-anchor="middle" font-size="10" fill="white">14credits</text>
 </g>
 <circle class="point" cx="151.503" cy="228" r="5" />
 <g class="tooltip">
- <rect x="136.503" y="198" width="30" height="20" rx="4" fill="#24292f" />
- <text x="151.503" y="212" text-anchor="middle" font-size="10" fill="white">22credits</text>
+ <rect x="136.503" y="198" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="161.503" y="212" text-anchor="middle" font-size="10" fill="white">22credits</text>
 </g>
 <circle class="point" cx="173.547" cy="184.727" r="5" />
 <g class="tooltip">
- <rect x="158.547" y="154.727" width="30" height="20" rx="4" fill="#24292f" />
- <text x="173.547" y="168.727" text-anchor="middle" font-size="10" fill="white">12credits</text>
+ <rect x="158.547" y="154.727" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="183.547" y="168.727" text-anchor="middle" font-size="10" fill="white">12credits</text>
 </g>
 </g>
 </svg>
