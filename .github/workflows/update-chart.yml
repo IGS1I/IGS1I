@@ -26,5 +26,4 @@ jobs:
               with:
                 author_name: GitHub Action
                 message: "Auto-update star chart"
-                add: "academia.svg"
-                add: "README.md"
+                add: '["academia.svg", "README.md"]'
