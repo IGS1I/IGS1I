@@ -1,14 +1,15 @@
 /**
- * 
- * 
+ * Program Name: Staryu
+ * Author: William Kendrick Coleman
+ * Description: Staryu takes in the number of credits you have earned for a given academic major/area of interest and creates a star/spider/radar chart, displaying where your strengths lie in the eyes of academic nuts. 
  */
 
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <cmath>
+#include <iostream> // for general input and output
+#include <fstream> // for reading and writing to files
+#include <vector> // for creating vectors
+#include <string> // for string functions
+#include <sstream> // for reading string from text file
+#include <cmath> // for most math operations
 
 using namespace std; // standard namespace (io, vetcors, etc)
 
@@ -16,11 +17,13 @@ const double PI = 3.14159265358979323846; // set static PI value
 
 // Data Structures
 
+// Coordinate Point
 struct Point {
     double x;
     double y;
 };
 
+// Major Statistics
 struct stat {
     string interest;
     int credits;
@@ -30,7 +33,7 @@ struct stat {
 /**
  * @brief Returns coordinate for a given input
  * 
- * @param num The point to be attributed
+ * @param num The input value that determines distance
  * @param angle The angle for the point to be attributed towards
  * @param center The center of the star chart's circle
  * @param radius The radius of the star chart's circle
@@ -74,7 +77,7 @@ int main () {
     // Chart configuration
     string filename = "academia.svg";
     int size = 400;
-    double maxVal = 70.0;
+    double maxVal = 55.0;
     double center = size / 2.0;
     double radius = (size / 2.0) * 0.7;
     int n = stats.size();
