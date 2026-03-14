@@ -8,6 +8,9 @@ on:
 jobs:
     build-and-update:
         runs-on: ubuntu-latest
+        permissions:
+            contents: write # give write permission for this update job
+            pull-requests: write
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
