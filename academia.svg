@@ -6,46 +6,53 @@
 </style>
 <rect width="100%" height="100%" fill="#0d1117" rx="10"/>
 <g transform="translate(100, 0)">
-<polygon points="200,172 226.63,191.348 216.458,222.652 183.542,222.652 173.37,191.348 " fill="none" stroke="#ffffff" />
-<polygon points="200,144 253.259,182.695 232.916,245.305 167.084,245.305 146.741,182.695 " fill="none" stroke="#ffffff" />
-<polygon points="200,116 279.889,174.043 249.374,267.957 150.626,267.957 120.111,174.043 " fill="none" stroke="#ffffff" />
-<polygon points="200,88 306.518,165.39 265.832,290.61 134.168,290.61 93.4817,165.39 " fill="none" stroke="#ffffff" />
-<polygon points="200,60 333.148,156.738 282.29,313.262 117.71,313.262 66.8521,156.738 " fill="none" stroke="#ffffff" />
+<polygon points="200,172 224.249,186 224.249,214 200,228 175.751,214 175.751,186 " fill="none" stroke="#ffffff" />
+<polygon points="200,144 248.497,172 248.497,228 200,256 151.503,228 151.503,172 " fill="none" stroke="#ffffff" />
+<polygon points="200,116 272.746,158 272.746,242 200,284 127.254,242 127.254,158 " fill="none" stroke="#ffffff" />
+<polygon points="200,88 296.995,144 296.995,256 200,312 103.005,256 103.005,144 " fill="none" stroke="#ffffff" />
+<polygon points="200,60 321.244,130 321.244,270 200,340 78.7564,270 78.7564,130 " fill="none" stroke="#ffffff" />
 <line x1="200" y1="200" x2="200" y2="60" stroke="#ffffff" />
 <text x="200" y="39" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Embedded Engineering</text>
-<line x1="200" y1="200" x2="333.148" y2="156.738" stroke="#ffffff" />
-<text x="353.12" y="150.248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Algorithms</text>
-<line x1="200" y1="200" x2="282.29" y2="313.262" stroke="#ffffff" />
-<text x="294.633" y="330.252" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Programming</text>
-<line x1="200" y1="200" x2="117.71" y2="313.262" stroke="#ffffff" />
-<text x="105.367" y="330.252" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Mathematics</text>
-<line x1="200" y1="200" x2="66.8521" y2="156.738" stroke="#ffffff" />
-<text x="46.8799" y="150.248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Physics</text>
-<polygon points="200,92 217.119,194.438 239.969,255.013 183.542,222.652 158.154,186.403 " fill="rgba(101, 112, 239, 0.93)" stroke="#6e78ccc2" stroke-width="2" />
+<line x1="200" y1="200" x2="321.244" y2="130" stroke="#ffffff" />
+<text x="339.43" y="119.5" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Algorithms</text>
+<line x1="200" y1="200" x2="321.244" y2="270" stroke="#ffffff" />
+<text x="339.43" y="280.5" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Programming</text>
+<line x1="200" y1="200" x2="200" y2="340" stroke="#ffffff" />
+<text x="200" y="361" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Mathematics</text>
+<line x1="200" y1="200" x2="78.7564" y2="270" stroke="#ffffff" />
+<text x="60.5699" y="280.5" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Physics</text>
+<line x1="200" y1="200" x2="78.7564" y2="130" stroke="#ffffff" />
+<text x="60.5699" y="119.5" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff">Chemistry</text>
+<polygon points="200,92 215.588,191 258.89,234 200,228 161.895,222 179.215,188 " fill="rgba(101, 112, 239, 0.93)" stroke="#6e78ccc2" stroke-width="2" />
 <circle class="point" cx="200" cy="92" r="5" />
 <g class="tooltip">
  <rect x="185" y="62" width="30" height="20" rx="4" fill="#24292f" />
  <text x="200" y="76" text-anchor="middle" font-size="10" fill="white">54credits</text>
 </g>
-<circle class="point" cx="217.119" cy="194.438" r="5" />
+<circle class="point" cx="215.588" cy="191" r="5" />
 <g class="tooltip">
- <rect x="202.119" y="164.438" width="30" height="20" rx="4" fill="#24292f" />
- <text x="217.119" y="178.438" text-anchor="middle" font-size="10" fill="white">9credits</text>
+ <rect x="200.588" y="161" width="30" height="20" rx="4" fill="#24292f" />
+ <text x="215.588" y="175" text-anchor="middle" font-size="10" fill="white">9credits</text>
 </g>
-<circle class="point" cx="239.969" cy="255.013" r="5" />
+<circle class="point" cx="258.89" cy="234" r="5" />
 <g class="tooltip">
- <rect x="224.969" y="225.013" width="30" height="20" rx="4" fill="#24292f" />
- <text x="239.969" y="239.013" text-anchor="middle" font-size="10" fill="white">34credits</text>
+ <rect x="243.89" y="204" width="30" height="20" rx="4" fill="#24292f" />
+ <text x="258.89" y="218" text-anchor="middle" font-size="10" fill="white">34credits</text>
 </g>
-<circle class="point" cx="183.542" cy="222.652" r="5" />
+<circle class="point" cx="200" cy="228" r="5" />
 <g class="tooltip">
- <rect x="168.542" y="192.652" width="30" height="20" rx="4" fill="#24292f" />
- <text x="183.542" y="206.652" text-anchor="middle" font-size="10" fill="white">14credits</text>
+ <rect x="185" y="198" width="30" height="20" rx="4" fill="#24292f" />
+ <text x="200" y="212" text-anchor="middle" font-size="10" fill="white">14credits</text>
 </g>
-<circle class="point" cx="158.154" cy="186.403" r="5" />
+<circle class="point" cx="161.895" cy="222" r="5" />
 <g class="tooltip">
- <rect x="143.154" y="156.403" width="30" height="20" rx="4" fill="#24292f" />
- <text x="158.154" y="170.403" text-anchor="middle" font-size="10" fill="white">22credits</text>
+ <rect x="146.895" y="192" width="30" height="20" rx="4" fill="#24292f" />
+ <text x="161.895" y="206" text-anchor="middle" font-size="10" fill="white">22credits</text>
+</g>
+<circle class="point" cx="179.215" cy="188" r="5" />
+<g class="tooltip">
+ <rect x="164.215" y="158" width="30" height="20" rx="4" fill="#24292f" />
+ <text x="179.215" y="172" text-anchor="middle" font-size="10" fill="white">12credits</text>
 </g>
 </g>
 </svg>
