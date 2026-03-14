@@ -2,5 +2,5 @@ Embedded Engineering: 54.0
 Algorithms: 9.0
 Programming: 34.0
 Mathematics: 14.0
-Physics: 22.0
+Natural Philosphy (Physics): 22.0
 Chemistry: 12.0
