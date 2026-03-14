@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: [actions/checkout](https://github.com/actions/checkout)@v4
+              uses: actions/checkout@v4
             
             - name: Compile C++ generator
               run: g++ staryu.cpp -o starGen
@@ -19,8 +19,8 @@ jobs:
               run: ./starGen
 
             - name: Commit and Push Chart
-              uses: [EndBug/add-and-commit](https://github.com/marketplace/actions/add-commit)@v9
+              uses: EndBug/add-and-commit@v9
               with:
-                authour_name: GutHub Action
+                author_name: GitHub Action
                 message: "Auto-update star chart"
                 add: "academia.svg"
