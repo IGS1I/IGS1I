@@ -88,18 +88,30 @@ int main () {
     svg << "<svg width=\"" << size + 200 << "\"" << " height=\"" << size << "\"" << " viewBox=\"0 0 " << size + 100 << " " << size << "\" "
         << "preserveAspectRatio=\"xMidYmid meet\" xmlns=\"http://www.w3.org/2000/svg\">\n";
     svg << "<style>\n"
+        << "    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1;} }\n"
         << "    @keyframes grow { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }\n"
-        << "    @keyframes fadeIn { from {transform: scale(0); opacity(0); } to { opacity: 1;} \n}"
+        << "    @keyframes draw { from { stroke-dashoffset: 100; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }\n"
+        << "    @keyframes pop {\n"
+        << "        0% { transform: scale(0); opacity: 0; }\n"
+        // << "        80% { transform: scale(1.05); opacity: 1; }\n" // bounce
+        << "        100% { transform: scale(1); opacity: 1; }\n"
+        << "    }\n"
+        << "    .axis-line { \n"
+        << "        stroke-dasharray: 140; \n"
+        << "        stroke-dashoffset: 140; \n"
+        << "        animation: draw 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards; \n"
+        << "        will-change: stroke-dashoffset; \n"
+        << "    }\n"
         << "    .grid-ring { animation: fadeIn 0.5s ease-in forwards; opacity: 0; }\n"
         << "    .ring-1 { animation-delay: 0.1s; }\n"
         << "    .ring-2 { animation-delay: 0.2s; }\n"
         << "    .ring-3 { animation-delay: 0.3s; }\n"
         << "    .ring-4 { animation-delay: 0.4s; }\n"
         << "    .ring-5 { animation-delay: 0.5s; }\n"
-        << "    .star-shape { transform-origin: " << center << "px " << center << "px; animation: grow 1.5s ease-out 0.7s both; }\n"
+        << "    .star-shape { transform-origin: " << center << "px " << center << "px; animation: pop 1.1s cubic-bezier(0.34, 1, 0.64, 1) 0.6s both; }\n"
         << "    .animate-in { animation: fadeIn 0.5s ease-in both }\n"
         << "    .delay-1 { animation-delay: 0.6s; }\n"
-        << "    .delay-2 { animation-delay: 0.3}\n"
+        << "    .delay-2 { animation-delay: 0.3s}\n"
         << "    .point { fill: #0933da00; cursor: pointer; }\n"
         << "    .point:hover + .tooltip { opacity: 1; }\n"
         << "    .tooltip {opacity: 0; transition: opacity 0.2s; pointer-events: none; }\n"
@@ -127,7 +139,7 @@ int main () {
         double angle = i * (2 * PI / n) - PI / 2;
         Point p = getCoordinates(maxVal, angle, center, radius, maxVal);
         Point lp = getCoordinates(maxVal * 1.15, angle, center, radius, maxVal);
-        svg << "<line x1=\"" << center << "\" y1=\"" << center << "\" x2=\"" << p.x << "\" y2=\"" << p.y << "\" stroke=\"#ffffff\" class=\"animate-in delay-2\"/>\n";
+        svg << "<line x1=\"" << center << "\" y1=\"" << center << "\" x2=\"" << p.x << "\" y2=\"" << p.y << "\" stroke=\"#ffffff\" class=\"axis-line\" style=\"animation-delay: " << (i * 0.1) << "s\" />\n";
         svg << "<text x=\"" << lp.x << "\" y=\"" << lp.y << "\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#ffffff\" class=\"animate-in delay-1\">" << stats[i].interest << "</text>\n";
     }
 
