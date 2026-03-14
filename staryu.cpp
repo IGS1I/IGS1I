@@ -93,7 +93,7 @@ int main () {
         << "    @keyframes draw { from { stroke-dashoffset: 100; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }\n"
         << "    @keyframes pop {\n"
         << "        0% { transform: scale(0); opacity: 0; }\n"
-        // << "        80% { transform: scale(1.05); opacity: 1; }\n" // bounce
+        << "        80% { transform: scale(1.05); opacity: 1; }\n" // bounce
         << "        100% { transform: scale(1); opacity: 1; }\n"
         << "    }\n"
         << "    .axis-line { \n"
