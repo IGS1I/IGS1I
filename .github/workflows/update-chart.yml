@@ -1,0 +1,26 @@
+name: Update Star Chart
+on:
+    push:
+        paths:
+            - "academia.txt" # runs when "academia.txt" is updated
+    workflow_dispatch: # adds manual run capability
+
+jobs:
+    build-and-update:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: [actions/checkout](https://github.com/actions/checkout)@v4
+            
+            - name: Compile C++ generator
+              run: g++ staryu.cpp -o starGen
+            
+            - name: Generate New SVG
+              run: ./starGen
+
+            - name: Commit and Push Chart
+              uses: [EndBug/add-and-commit](https://github.com/marketplace/actions/add-commit)@v9
+              with:
+                authour_name: GutHub Action
+                message: "Auto-update star chart"
+                add: "academia.svg"
