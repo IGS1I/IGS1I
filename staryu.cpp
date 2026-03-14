@@ -74,7 +74,7 @@ int main () {
     // Chart configuration
     string filename = "academia.svg";
     int size = 400;
-    double maxVal = 40.0;
+    double maxVal = 70.0;
     double center = size / 2.0;
     double radius = (size / 2.0) * 0.7;
     int n = stats.size();
