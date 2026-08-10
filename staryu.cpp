@@ -32,13 +32,13 @@ struct stat {
 
 /**
  * @brief Returns coordinate for a given input
- * 
+ *
  * @param num The input value that determines distance
  * @param angle The angle for the point to be attributed towards
  * @param center The center of the star chart's circle
  * @param radius The radius of the star chart's circle
  * @param maxValue The max possible point value
- * 
+ *
  * @return The x-value and y-value of coordinate
  */
 Point getCoordinates(double num, double angle, double center, double radius, double maxValue) {
@@ -56,7 +56,7 @@ int main () {
     string fileStat;
 
     // error case
-    if (!statsFile.is_open()) {cerr << "Could not open file" << endl; return 1;} 
+    if (!statsFile.is_open()) {cerr << "Could not open file" << endl; return 1;}
 
     // Pull stats from file
     while (getline(statsFile, fileStat)) {
@@ -77,7 +77,7 @@ int main () {
     // Chart configuration
     string filename = "academia.svg";
     int size = 400;
-    double maxVal = 55.0;
+    double maxVal = 40.0;
     double center = size / 2.0;
     double radius = (size / 2.0) * 0.7;
     int n = stats.size();
