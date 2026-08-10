@@ -1,6 +1,5 @@
-Embedded Engineering: 54.0
-Algorithms: 9.0
-Programming: 34.0
-Mathematics: 14.0
-Physics/Chem: 34.0
-Artficial Intelligence: 6.0
+Embedded & Edge Systems: 48
+Programming: 34
+Applied Mathematics: 24
+Physical Sciences: 31
+Machine Intelligence: 13
