@@ -10,6 +10,7 @@
 #include <string> // for string functions
 #include <sstream> // for reading string from text file
 #include <cmath> // for most math operations
+#include <algorithm> // to clamp star to maxVal
 
 using namespace std; // standard namespace (io, vetcors, etc)
 
@@ -42,6 +43,7 @@ struct stat {
  * @return The x-value and y-value of coordinate
  */
 Point getCoordinates(double num, double angle, double center, double radius, double maxValue) {
+    num = clamp(num, 0.0, maxValue); // clamp value (0-maxValue)
     Point coord;
     coord.x = center + (radius * (num/maxValue)) * cos(angle);
     coord.y = center + (radius * (num/maxValue)) * sin(angle);
