@@ -1,5 +1,5 @@
 Embedded & Edge Systems: 48
-Programming: 34
 Applied Mathematics: 24
 Physical Sciences: 31
 Machine Intelligence: 13
+Programming: 34
