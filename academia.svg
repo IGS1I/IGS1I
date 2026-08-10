@@ -36,40 +36,40 @@
 <polygon class="grid-ring ring-4" points="200,88 306.518,165.39 265.832,290.61 134.168,290.61 93.4817,165.39 " fill="none" stroke="#ffffff" />
 <polygon class="grid-ring ring-5" points="200,60 333.148,156.738 282.29,313.262 117.71,313.262 66.8521,156.738 " fill="none" stroke="#ffffff" />
 <line x1="200" y1="200" x2="200" y2="60" stroke="#ffffff" class="axis-line" style="animation-delay: 0s" />
-<text x="200" y="60" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Embedded & Edge Systems</text>
+<text x="200" y="39" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Embedded & Edge Systems</text>
 <line x1="200" y1="200" x2="333.148" y2="156.738" stroke="#ffffff" class="axis-line" style="animation-delay: 0.1s" />
-<text x="333.148" y="156.738" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Programming</text>
+<text x="353.12" y="150.248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Applied Mathematics</text>
 <line x1="200" y1="200" x2="282.29" y2="313.262" stroke="#ffffff" class="axis-line" style="animation-delay: 0.2s" />
-<text x="282.29" y="313.262" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Applied Mathematics</text>
+<text x="294.633" y="330.252" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Physical Sciences</text>
 <line x1="200" y1="200" x2="117.71" y2="313.262" stroke="#ffffff" class="axis-line" style="animation-delay: 0.3s" />
-<text x="117.71" y="313.262" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Physical Sciences</text>
+<text x="105.367" y="330.252" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Machine Intelligence</text>
 <line x1="200" y1="200" x2="66.8521" y2="156.738" stroke="#ffffff" class="axis-line" style="animation-delay: 0.4s" />
-<text x="66.8521" y="156.738" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Machine Intelligence</text>
-<polygon class="star-shape" points="200,60 313.176,163.227 249.374,267.957 136.225,287.778 156.727,185.94 " fill="rgba(101, 112, 239, 0.93)" stroke="#6e78ccc2" stroke-width="2" />
-<g class="animate-in delay-1"><circle class="point" cx="200" cy="60" r="5" />
+<text x="46.8799" y="150.248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ffffff" class="animate-in delay-1">Programming</text>
+<polygon class="star-shape" points="200,60 279.889,174.043 263.775,287.778 173.256,236.81 86.8243,163.227 " fill="rgba(101, 112, 239, 0.93)" stroke="#6e78ccc2" stroke-width="2" />
+<g class="animate-in delay-1"><circle class="point" cx="200" cy="32" r="5" />
 <g class="tooltip">
- <rect x="185" y="30" width="50" height="20" rx="4" fill="#24292f" />
- <text x="210" y="44" text-anchor="middle" font-size="10" fill="white">48 credits</text>
+ <rect x="185" y="2" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="210" y="16" text-anchor="middle" font-size="10" fill="white">48 credits</text>
 </g>
-<circle class="point" cx="313.176" cy="163.227" r="5" />
+<circle class="point" cx="279.889" cy="174.043" r="5" />
 <g class="tooltip">
- <rect x="298.176" y="133.227" width="50" height="20" rx="4" fill="#24292f" />
- <text x="323.176" y="147.227" text-anchor="middle" font-size="10" fill="white">34 credits</text>
+ <rect x="264.889" y="144.043" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="289.889" y="158.043" text-anchor="middle" font-size="10" fill="white">24 credits</text>
 </g>
-<circle class="point" cx="249.374" cy="267.957" r="5" />
+<circle class="point" cx="263.775" cy="287.778" r="5" />
 <g class="tooltip">
- <rect x="234.374" y="237.957" width="50" height="20" rx="4" fill="#24292f" />
- <text x="259.374" y="251.957" text-anchor="middle" font-size="10" fill="white">24 credits</text>
+ <rect x="248.775" y="257.778" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="273.775" y="271.778" text-anchor="middle" font-size="10" fill="white">31 credits</text>
 </g>
-<circle class="point" cx="136.225" cy="287.778" r="5" />
+<circle class="point" cx="173.256" cy="236.81" r="5" />
 <g class="tooltip">
- <rect x="121.225" y="257.778" width="50" height="20" rx="4" fill="#24292f" />
- <text x="146.225" y="271.778" text-anchor="middle" font-size="10" fill="white">31 credits</text>
+ <rect x="158.256" y="206.81" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="183.256" y="220.81" text-anchor="middle" font-size="10" fill="white">13 credits</text>
 </g>
-<circle class="point" cx="156.727" cy="185.94" r="5" />
+<circle class="point" cx="86.8243" cy="163.227" r="5" />
 <g class="tooltip">
- <rect x="141.727" y="155.94" width="50" height="20" rx="4" fill="#24292f" />
- <text x="166.727" y="169.94" text-anchor="middle" font-size="10" fill="white">13 credits</text>
+ <rect x="71.8243" y="133.227" width="50" height="20" rx="4" fill="#24292f" />
+ <text x="96.8243" y="147.227" text-anchor="middle" font-size="10" fill="white">34 credits</text>
 </g>
 </g>
 </g>
