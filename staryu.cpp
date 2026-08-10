@@ -148,8 +148,8 @@ int main () {
     svg << "<polygon class=\"star-shape\" points=\"";
     for (int i=0; i < n; ++i) {
         double angle = i * (2 * PI / n) - PI / 2;
-        num = clamp(stats[i].credits, 0.0, maxVal); // clamp credit (0-maxValue)
-        Point p = getCoordinates(num, angle, center, radius, maxVal);
+        int clamped_credits = clamp(stats[i].credits, 0.0, maxVal); // clamp credit (0-maxValue)
+        Point p = getCoordinates(clamped_credits, angle, center, radius, maxVal);
         svg << p.x << "," << p.y << " ";
     }
     svg << "\" fill=\"rgba(101, 112, 239, 0.93)\" stroke=\"#6e78ccc2\" stroke-width=\"2\" />\n";
