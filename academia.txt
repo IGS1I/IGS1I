@@ -3,4 +3,4 @@ Algorithms: 9.0
 Programming: 34.0
 Mathematics: 14.0
 Physics/Chem: 34.0
-Artficial Intelligence: 0.0
+Artficial Intelligence: 6.0
