@@ -25,11 +25,34 @@ struct Point {
 };
 
 // Major Statistics
-struct stat {
+struct MajorStat {
     string interest;
     int credits;
 };
 
+// Clamp a value to a fixed range
+double clampValue(double value, double minValue, double maxValue) {
+    if (value < minValue) return minValue;
+    if (value > maxValue) return maxValue;
+    return value;
+}
+
+// Escape XML special characters for SVG output
+string escapeXml(const string& text) {
+    string result;
+    result.reserve(text.size());
+    for (char c : text) {
+        switch (c) {
+            case '&': result += "&amp;"; break;
+            case '<': result += "&lt;"; break;
+            case '>': result += "&gt;"; break;
+            case '"': result += "&quot;"; break;
+            case '\'': result += "&apos;"; break;
+            default: result += c;
+        }
+    }
+    return result;
+}
 
 /**
  * @brief Returns coordinate for a given input
@@ -43,6 +66,7 @@ struct stat {
  * @return The x-value and y-value of coordinate
  */
 Point getCoordinates(double num, double angle, double center, double radius, double maxValue) {
+    num = clampValue(num, 0.0, maxValue);
     Point coord;
     coord.x = center + (radius * (num/maxValue)) * cos(angle);
     coord.y = center + (radius * (num/maxValue)) * sin(angle);
@@ -53,7 +77,7 @@ int main () {
 
     // Pulling in interests and their stats
     ifstream statsFile("academia.txt"); // input file stream
-    vector<stat> stats;
+    vector<MajorStat> stats;
     string fileStat;
 
     // error case
@@ -69,7 +93,7 @@ int main () {
             // Get credits after ":"
             if (getline(ss, numString)) {
                 // Input stat, converting numString to integer
-                stats.push_back({label, stoi(numString)});
+                stats.push_back(MajorStat{label, stoi(numString)});
             }
         }
     }
@@ -78,7 +102,7 @@ int main () {
     // Chart configuration
     string filename = "academia.svg";
     int size = 400;
-    double maxVal = 40.0;
+    double maxVal = 45.0;
     double center = size / 2.0;
     double radius = (size / 2.0) * 0.7;
     int n = stats.size();
@@ -140,16 +164,36 @@ int main () {
         double angle = i * (2 * PI / n) - PI / 2;
         Point p = getCoordinates(maxVal, angle, center, radius, maxVal);
         Point lp = getCoordinates(maxVal * 1.15, angle, center, radius, maxVal);
+
+        // Compute simple side offsets and text-anchor based on angle
+        double ax = cos(angle);
+        double ay = sin(angle);
+        string anchor = "middle";
+        double labelX = lp.x;
+        double labelY = lp.y;
+
+        // If label is mostly to the right or left, nudge and change anchor
+        if (ax > 0.5) {
+            anchor = "start";
+            labelX += 8; // move a bit to the right
+        } else if (ax < -0.5) {
+            anchor = "end";
+            labelX -= 8; // move a bit to the left
+        }
+
+        // Small vertical nudge for top/bottom labels to avoid overlap
+        if (ay < -0.8) labelY -= 6; // top
+        else if (ay > 0.8) labelY += 6; // bottom
+
         svg << "<line x1=\"" << center << "\" y1=\"" << center << "\" x2=\"" << p.x << "\" y2=\"" << p.y << "\" stroke=\"#ffffff\" class=\"axis-line\" style=\"animation-delay: " << (i * 0.1) << "s\" />\n";
-        svg << "<text x=\"" << lp.x << "\" y=\"" << lp.y << "\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#ffffff\" class=\"animate-in delay-1\">" << stats[i].interest << "</text>\n";
+        svg << "<text x=\"" << labelX << "\" y=\"" << labelY << "\" text-anchor=\"" << anchor << "\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#ffffff\" class=\"animate-in delay-1\">" << escapeXml(stats[i].interest) << "</text>\n";
     }
 
     // Star Shape
     svg << "<polygon class=\"star-shape\" points=\"";
     for (int i=0; i < n; ++i) {
         double angle = i * (2 * PI / n) - PI / 2;
-        double clamped_credits = clamp(static_cast<double>(stats[i].credits), 0.0, maxVal); // clamp credit (0-maxValue)
-        Point p = getCoordinates(clamped_credits, angle, center, radius, maxVal);
+        Point p = getCoordinates(stats[i].credits, angle, center, radius, maxVal);
         svg << p.x << "," << p.y << " ";
     }
     svg << "\" fill=\"rgba(101, 112, 239, 0.93)\" stroke=\"#6e78ccc2\" stroke-width=\"2\" />\n";
